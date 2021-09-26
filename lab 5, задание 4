@@ -1,0 +1,10 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+   int x1=1, y1=1, x2=4, y2=3;
+   int P=2*(abs(x1-x2)+abs(y1-y2));
+   int S=abs(x1-x2)*abs(y1-y2);
+   cout<<P<<" "<<S;
+}
