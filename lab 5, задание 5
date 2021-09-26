@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+   int x1=1, y1=1, x2=5, y2=1, x3=3, y3=6;
+   int AB=sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
+   int BC=sqrt(((x2-x3)*(x2-x3))+((y2-y3)*(y2-y3)));
+   int AC=sqrt(((x3-x1)*(x3-x1))+((y3-y1)*(y3-y1)));
+   int P=AB+BC+AC;
+   int p=P/2;
+   int S=sqrt(p*(p-AB)*(p-BC)*(p-AC));
+        cout<<P<<" "<<S;
+}
