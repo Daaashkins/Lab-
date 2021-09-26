@@ -1,0 +1,53 @@
+//1
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a=5;
+    int b=10;
+    int S=a*b;
+    int P=2*(a+b);
+    cout<<"Площадь равна "<<S<<" "<<"Периметр равен "<<P;
+    
+
+}
+
+//2
+#include <iostream>
+using namespace std;
+
+int main(){
+    int d=5;
+    int pi=3.14;
+    int L=pi*d;
+    cout<<"длина окружности равна "<<L;
+    
+
+}
+
+//3
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a=5;
+    int b=7;
+    int L=(a+b)/2;
+    cout<<"Среднее арифмитическое чисел "<<L;
+    
+
+}
+
+//4
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a=5;
+    int b=7;
+    int A=a*a;
+    int B=b*b;
+    cout<<A+B<<" "<<B-A<<" "<<A*B<<" "<<B/A;
+    
+
+}
