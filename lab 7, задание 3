@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int X=2;
+    int A=360;
+    int C=A/X;
+    int Y=8;
+    int P=C*Y;
+    cout<<C<<" "<<P;
+}
