@@ -1,0 +1,10 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int A=20;
+    int B=5;
+    int C=A/B;
+    cout<<C;
+}
