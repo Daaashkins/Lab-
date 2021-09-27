@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int A=2;
+    int B=A*A;
+    B=B*B;
+    B=B*B;
+    cout<<B;
+    
+}
