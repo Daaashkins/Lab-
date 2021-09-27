@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int A=2;
+    int B=A*A;
+    int C=B*A;
+    C=B*C;
+    A=C*C*C;
+    cout<<A;
+
+
+    
+}
