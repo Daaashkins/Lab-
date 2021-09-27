@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int A=5;
+    int B=7;
+    int C=10;
+    int D=B;
+    B=A;
+    A=C;
+    C=D;
+  
+    cout<<A<<" "<<B<<" "<<C;
+}
