@@ -1,0 +1,54 @@
+1.#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+    int N=66;
+    int A=N/60;
+    printf("%d", N-A*60);
+}
+2. #include <stdio.h>
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int N;
+    cin>>N;
+    cout<<N%7;
+
+}
+3. #include <stdio.h>
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int N;
+    cin>>N;
+    cout<<N%7+1;
+
+}
+4. #include <stdio.h>
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int A, B, C;
+    cin>>A>>B>>C;
+    int Z=(A*B)/(C*C);
+    cout<<A<< " "<< A*B-C*C*Z;
+
+}
+5. #include <stdio.h>
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int A;
+    cin>>A;
+    cout<<A/100+1;
+
+
+}
