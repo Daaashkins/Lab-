@@ -1,0 +1,88 @@
+1.#include <iostream>
+#include <stdio.h>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int a, b;
+    cout<<"Введите a ";
+    cin>>a;
+    cout<<"Введите b ";
+    cin>>b;
+    int S=a*b;
+    int P=2*(a+b);
+    cout<<"Площадь равна "<<S<<" "<<"Периметр равен "<<P;
+    
+
+}
+
+2.#include <iostream>
+#include <stdio.h>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int d;
+    cout<<"Введие d ";
+    cin>>d;
+    int pi=3.14;
+    int L=pi*d;
+    cout<<"длина окружности равна "<<L;
+    
+
+}
+
+3.#include <iostream>
+#include <stdio.h>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int a, b;
+    cout<<"Введите a ";
+    cin>>a;
+    cout<<"Ведите b ";
+    cin>>b;
+    int L=(a+b)/2;
+    cout<<"Среднее арифмитическое чисел "<<L;
+    
+
+}
+
+4.#include <iostream>
+#include <stdio.h>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int a, b;
+    cout<<"Введите a ";
+    cin>>a;
+    cout<<"Ведите b ";
+    cin>>b;
+    int A=a*a;
+    int B=b*b;
+    cout<<"Сумма= "<<A+B <<"\nРазность= "<<A-B <<"\nПроизведение= "<<A*B <<"\nЧастное= "<<A/B;
+    
+
+
+}
+5.#include <iostream>
+#include <stdio.h>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int a, b;
+    cout<<"Введите a ";
+    cin>>a;
+    cout<<"Ведите b ";
+    cin>>b;
+    int A=abs(a);
+    int B=abs(b);
+    cout<<"Сумма= "<<A+B <<"\nРазность= "<<A-B <<"\nПроизведение= "<<A*B <<"\nЧастное= "<< A/B;
+    
+
+}
+
+
