@@ -38,14 +38,15 @@ int main(){
 using namespace std;
 
 int main(){
-    int a, b;
+    double a, b;
     cout<<"Введите a ";
     cin>>a;
     cout<<"Ведите b ";
     cin>>b;
-    int L=(a+b)/2;
+    double L=(a+b)/2;
     cout<<"Среднее арифмитическое чисел "<<L;
     
+
 
 }
 
