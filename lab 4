@@ -56,13 +56,13 @@ int main(){
 using namespace std;
 
 int main(){
-    int a, b;
+    double a, b;
     cout<<"Введите a ";
     cin>>a;
     cout<<"Ведите b ";
     cin>>b;
-    int A=a*a;
-    int B=b*b;
+    double A=a*a;
+    double B=b*b;
     cout<<"Сумма= "<<A+B <<"\nРазность= "<<A-B <<"\nПроизведение= "<<A*B <<"\nЧастное= "<<A/B;
     
 
@@ -74,13 +74,13 @@ int main(){
 using namespace std;
 
 int main(){
-    int a, b;
+    double a, b;
     cout<<"Введите a ";
     cin>>a;
     cout<<"Ведите b ";
     cin>>b;
-    int A=abs(a);
-    int B=abs(b);
+    double A=abs(a);
+    double B=abs(b);
     cout<<"Сумма= "<<A+B <<"\nРазность= "<<A-B <<"\nПроизведение= "<<A*B <<"\nЧастное= "<< A/B;
     
 
