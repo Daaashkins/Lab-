@@ -1,0 +1,72 @@
+1.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+   int x1, x2, y1, y2;
+   cout<<"Введите координаты X1,X2,Y1,Y2";
+   cin>>x1>>x2>>y1>>y2;
+   int S=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+   cout<<"Расстояние равно "<< S;
+ 
+}
+2.#include <iostream>
+#include <cmath>
+#include <stdio.h>
+using namespace std;
+
+int main(){
+   int A,B,C;
+   cout<<"Введите координаты A,B,C";
+   cin>> A>>B>>C;
+   int AC=C-A;
+   int BC=C-B;
+   cout<<"AC="<<AC<<"\nBC= "<<BC<<"\nСумма= "<<AC+BC;
+   
+}
+3.#include <iostream>
+#include <cmath>
+#include <stdio.h>
+using namespace std;
+
+int main(){
+   int A,B,C;
+   cout<<"Введите координаты A,B,C";
+   cin>> A>>B>>C;
+   int AC=C-A;
+   int BC=B-AC;
+   cout<<"AC="<<AC<<"\nBC= "<<BC<<"\nПроизведение= "<<AC*BC;
+   
+}
+4.#include <iostream>
+#include <cmath>
+#include <stdio.h>
+using namespace std;
+
+int main(){
+   int x1, y1, x2, y2;
+   cout<<"Введите X1, Y1, X2, Y2";
+      cin>>x1>>y1>>x2>>y2;
+   int P=2*(abs(x1-x2)+abs(y1-y2));
+   int S=abs(x1-x2)*abs(y1-y2);
+   cout<<"Периметр равен "<<P<<"\nПлощадь равна "<<S;
+   
+}
+5.#include <iostream>
+#include <cmath>
+#include <stdio.h>
+using namespace std;
+
+int main(){
+   int x1, y1, x2, y2, x3, y3;
+   cout<<"Введите координаты x1, y1, x2, y2, x3, y3";
+   cin>>x1>> y1>> x2>> y2>> x3>> y3;
+   int AB=sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
+   int BC=sqrt(((x2-x3)*(x2-x3))+((y2-y3)*(y2-y3)));
+   int AC=sqrt(((x3-x1)*(x3-x1))+((y3-y1)*(y3-y1)));
+   int P=AB+BC+AC;
+   int p=P/2;
+   int S=sqrt(p*(p-AB)*(p-BC)*(p-AC));
+        cout<<"Периметр="<<P<<"\nПлощадь= "<<S;
+   
+}
