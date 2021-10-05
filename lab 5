@@ -3,9 +3,9 @@
 using namespace std;
 
 int main(){
-   double x1, x2, y1, y2;
-   cout<<"Введите координаты X1,X2,Y1,Y2";
-   cin>>x1>>x2>>y1>>y2;
+   double x1, y1, x2, y2;
+   cout<<"Введите координаты X1, X2, Y1, Y2";
+   cin>>x1>>y1>>x2>>y2;
    double S=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
    cout<<"Расстояние равно "<< S;
  
@@ -17,11 +17,11 @@ int main(){
 using namespace std;
 
 int main(){
-   int A,B,C;
+   double A,B,C;
    cout<<"Введите координаты A,B,C";
    cin>> A>>B>>C;
-   int AC=C-A;
-   int BC=C-B;
+   double AC=C-A;
+   double BC=C-B;
    cout<<"AC="<<AC<<"\nBC= "<<BC<<"\nСумма= "<<AC+BC;
    
 }
@@ -31,13 +31,17 @@ int main(){
 using namespace std;
 
 int main(){
-   int A,B,C;
-   cout<<"Введите координаты A,B,C";
+   double A,B,C;
+   cout<<"Введите координаты A,B,C\n координата С должна располагаться между A и B";
    cin>> A>>B>>C;
-   int AC=C-A;
-   int BC=B-AC;
+   if (C>A &&C<B){
+   double AC=C-A;
+   double BC=B-C;
    cout<<"AC="<<AC<<"\nBC= "<<BC<<"\nПроизведение= "<<AC*BC;
-   
+   }
+   else{
+       cout<<"Введено неправильное значение C";
+   }
 }
 4.#include <iostream>
 #include <cmath>
@@ -45,11 +49,11 @@ int main(){
 using namespace std;
 
 int main(){
-   int x1, y1, x2, y2;
+   double x1, y1, x2, y2;
    cout<<"Введите X1, Y1, X2, Y2";
-      cin>>x1>>y1>>x2>>y2;
-   int P=2*(abs(x1-x2)+abs(y1-y2));
-   int S=abs(x1-x2)*abs(y1-y2);
+   cin>>x1>>y1>>x2>>y2;
+   double P=2*(abs(x1-x2)+abs(y1-y2));
+   double S=abs(x1-x2)*abs(y1-y2);
    cout<<"Периметр равен "<<P<<"\nПлощадь равна "<<S;
    
 }
@@ -59,15 +63,16 @@ int main(){
 using namespace std;
 
 int main(){
-   int x1, y1, x2, y2, x3, y3;
+   double x1, y1, x2, y2, x3, y3;
    cout<<"Введите координаты x1, y1, x2, y2, x3, y3";
    cin>>x1>> y1>> x2>> y2>> x3>> y3;
-   int AB=sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
-   int BC=sqrt(((x2-x3)*(x2-x3))+((y2-y3)*(y2-y3)));
-   int AC=sqrt(((x3-x1)*(x3-x1))+((y3-y1)*(y3-y1)));
-   int P=AB+BC+AC;
-   int p=P/2;
-   int S=sqrt(p*(p-AB)*(p-BC)*(p-AC));
+   double AB=sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
+   double BC=sqrt(((x2-x3)*(x2-x3))+((y2-y3)*(y2-y3)));
+   double AC=sqrt(((x3-x1)*(x3-x1))+((y3-y1)*(y3-y1)));
+   double P=AB+BC+AC;
+   double p=P/2;
+   double S=sqrt(p*(p-AB)*(p-BC)*(p-AC));
         cout<<"Периметр="<<P<<"\nПлощадь= "<<S;
    
 }
+
