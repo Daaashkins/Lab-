@@ -1,0 +1,77 @@
+1.#include <iostream>
+#include <stdio.h>
+using namespace std;
+int main(){
+    double A;
+    cout<<"Введите значение угла";
+    cin>>A;
+    cout<<"A="<<A/180<<"pi";
+    
+}
+
+2.#include <iostream>
+#include <stdio.h>
+using namespace std;
+int main(){
+    double A;
+    cout<<"Введите значение угла в радианах";
+    cin>>A;
+    cout<<"A="<<A*180<<" градусов";
+    
+}
+
+3.#include <iostream>
+#include <stdio.h>
+#include <cmath>
+using namespace std;
+
+int main(){
+    double X, A, Y;
+    cout<<"Введите значение X кг, стоимость A руб., Y кг";
+    cin>>X>>A>>Y;
+    int C=A/X;
+    int P=C*Y;
+    cout<<"Один килограмм конфет="<<C<<"руб.\nY килограмм конфет="<<P;
+    
+}
+
+4.#include <iostream>
+#include <stdio.h>
+#include <cmath>
+using namespace std;
+
+int main(){
+    double V1, V2, S,T;
+    cout<<"Введите значение V1, V2, S, T";
+    cin>>V1>>V2>>S>>T;
+    S=S+V1*T+V2*T;
+    cout<<"Расстояние между автомобилями равно "<<S;
+}
+
+5.#include <iostream>
+#include <stdio.h>
+#include <cmath>
+using namespace std;
+
+int main(){
+    double B, A, x;
+    cout<<"Уравнение A*x+B=0 Введите значения A, B";
+    cin>>A>>B;
+     x=-B/A;
+    cout<<"Значение X= "<<x;
+}
+
+6.#include <iostream>
+#include <stdio.h>
+#include <cmath>
+using namespace std;
+
+int main(){
+    double A1, B1, C1, A2, B2, C2, x, y;
+    cout<<"Уравнение A1*x+B1*y=C1"<<"\nA2*x+B1*y=C2"<<"\nВведите значения  A1, B1, C1, A2, B2, C2";
+    cin>>A1>>B1>>C1>>A2>>B2>>C2;
+    int D = A1*B2-A2*B1;
+    x = (C1*B2 - C2*B1)/D;
+    y = (A1*C2 - A2*C1)/D;
+    cout<<"Значение X= "<<x<<"\nЗначение Y= "<<y;
+}
