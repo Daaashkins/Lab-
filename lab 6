@@ -16,12 +16,13 @@ int main(){
 #include <stdio.h>
 using namespace std;
 int main(){
-    double A, B, C;
+    double A, B, C, D;
     cout<<"Введите значения A, B, C";
     cin>>A>>B>>C;
+    D=C;
     C=A;
     A=B;
-    B=C;
+    B=D;
     cout<<"A="<<A<<"\nB="<<B<<"\nC="<<C;
     
 }
