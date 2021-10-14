@@ -1,54 +1,75 @@
 1.#include <iostream>
 #include <cmath>
 using namespace std;
+
 int main(){
-    int N=66;
+    int N;
+    cout<<"Введите значение секунд";
+    cin>>N;
     int A=N/60;
-    printf("%d", N-A*60);
-}
-2. #include <stdio.h>
-#include <iostream>
+    cout<<"Количество секунд, прошедших с начала последней минуты "<<N-A*60;
+    
+} 
+
+
+2. #include <iostream>
 #include <cmath>
 using namespace std;
 
 int main(){
     int N;
+    cout<<"Введите номер дня";
     cin>>N;
-    cout<<N%7;
-
+    if (N>1 && N<366){
+    cout<<"номер дня недели для K-го дня года "<<N%7;
+    }
+    else{
+    cout<<"Введено неправильное значение";
+    }
+    
 }
-3. #include <stdio.h>
-#include <iostream>
+
+3. #include <iostream>
 #include <cmath>
 using namespace std;
 
 int main(){
     int N;
+    cout<<"Введите номер дня";
     cin>>N;
-    cout<<N%7+1;
-
+    if (N>1 && N<366){
+    cout<<"номер дня недели для K-го дня года "<<N%7+1;
+    }
+    else{
+    cout<<"Введено неправильное значение";
+    }
+    
 }
-4. #include <stdio.h>
-#include <iostream>
+
+4.#include <iostream>
 #include <cmath>
 using namespace std;
 
 int main(){
-    int A, B, C;
+    int A,B,C;
+    cout<<"Введите A,B,C";
     cin>>A>>B>>C;
     int Z=(A*B)/(C*C);
-    cout<<A<< " "<< A*B-C*C*Z;
-
+    cout<<"Количество квадратов "<<A<<"\nНезанятая площадь"<<A*B-C*C*Z;
+ 
 }
-5. #include <stdio.h>
-#include <iostream>
+
+5.#include <iostream>
 #include <cmath>
 using namespace std;
 
 int main(){
     int A;
+    cout<<"Введите A";
     cin>>A;
-    cout<<A/100+1;
-
-
+    
+    cout<<"номер столетия "<<A/100+1;
+    
+   
+    
 }
