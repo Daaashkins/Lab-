@@ -1,0 +1,139 @@
+1.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int A, B;
+    cout<<"Введите A,B";
+    cin>>A>>B;
+    if(A>2 && B<=3){
+    
+    cout<<"Высказывание истинно";
+    
+    }
+    else{
+        cout<<"Высказывание ложно";
+    }
+}
+  
+2.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int A, B, C;
+    cout<<"Введите A,B,C";
+    cin>>A>>B>>C;
+    if(A<B && A<C && B<C){
+    
+    cout<<"Высказывание истинно";
+    
+    }
+    else{
+        cout<<"Высказывание ложно";
+    }
+}
+  
+3.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int A;
+    cout<<"Введите A";
+    cin>>A;
+    if(A<100 && A%2==0){
+    
+    cout<<"Высказывание истинно";
+    
+    }
+    else{
+        cout<<"Высказывание ложно";
+    }
+}
+
+4.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int A, B, C, D;
+    cout<<"Введите A";
+    cin>>A;
+    if(A>99 && A<1000){
+        B=A/100;
+        C=A%100/10;
+        D=A%10;
+        if(B>C>D || B<C<D){
+            cout<<"Высказывание истинно";
+        }
+        else{
+            cout<<"Высказывание ложно";
+        }
+    }
+    else{
+        cout<<"Высказывание ложно";
+    }
+}
+
+5.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int A, B, C, D, E;
+    cout<<"Введите A";
+    cin>>A;
+    if(A>999 && A<10000){
+        B=A/1000;
+        C=A%1000/100;
+        D=A%100/10;
+        E=A%10;
+        if(B==E &&C==D){
+            cout<<"Высказывание истинно";
+        }
+        else{
+            cout<<"Высказывание ложно";
+        }
+    }
+    else{
+        cout<<"Высказывание ложно";
+    }
+}
+  
+6.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int a, b, c;
+    cout<<"Введите a,b,c";
+    cin>>a>>b>>c;
+    if((a*a==b*b+c*c) || (b*b==a*a+c*c) || (c*c==b*b+a*a)){
+            cout<<"Треугольник прямоугольный";
+        }
+        else{
+            cout<<"Треугольник НЕ прямоугольный";
+        }
+    
+
+}
+
+7.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int a, b, c;
+    cout<<"Введите a,b,c";
+    cin>>a>>b>>c;
+    if(a<b+c && b<a+c && c<b+a){
+            cout<<"Треугольник существует";
+        }
+        else{
+            cout<<"Треугольник НЕ существует";
+        }
+    
+
+}
+ 
