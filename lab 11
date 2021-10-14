@@ -1,0 +1,45 @@
+1.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int A,B;
+    cout<<"Введите A,B";
+    cin>>A>>B;
+    if(A!=B){
+            A=max(A,B);
+            B=A;
+            cout<<"A="<<A<<"\nB="<<B;
+        }
+        else{
+            A=0;
+            B=0;
+            cout<<"A="<<A<<"\nB="<<B;
+        }
+    
+
+}
+
+2.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int A,B, C;
+    cout<<"Введите A,B,C";
+    cin>>A>>B>>C;
+    if(B<=C && B<=A){
+            
+            cout<<"A+C="<<A+C;
+        }
+    else if(A<=C && A<=B){
+           cout<<"B+C="<<B+C;
+        }
+    else{
+        cout<<"B+A="<<B+A;
+    }
+    
+
+}
+
+3.
