@@ -1,9 +1,0 @@
-#include <iostream>
-#include <cmath>
-using namespace std;
-
-int main(){
-    int Bit=2048;
-    int Kb=Bit/1024;
-    cout<<Kb;
-}

@@ -1,0 +1,68 @@
+1. #include <iostream>
+#include <stdio.h>
+#include <cmath>
+using namespace std;
+
+int main(){
+    double b;
+    cout<<"Введите значение байтов";
+    cin>>b;
+    int Kb=b/1024;
+    cout<<"Значение килобайтов равно "<<Kb;
+}
+
+2.#include <iostream>
+#include <stdio.h>
+#include <cmath>
+using namespace std;
+
+int main(){
+    double A,B;
+    cout<<"Введите значение A,B";
+    cin>>A>>B;
+    int C=A/B;
+    cout<<"Количество отрезков "<<C;
+}
+
+3.#include <iostream>
+#include <stdio.h>
+#include <cmath>
+using namespace std;
+
+int main(){
+    double A,B;
+    cout<<"Введите значение A,B";
+    cin>>A>>B;
+    int C=A/B;
+    cout<<"Незанятая часть отрезка A "<<A-B*C;
+}
+
+4.#include <iostream>
+#include <stdio.h>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int A;
+    cout<<"Введите значение A";
+    cin>>A;
+    int B=A/10;
+    int C=A%10;
+    A=C*10+B;
+    cout<<"Перестановка цифр числа "<<A;
+}
+5.#include <iostream>
+#include <stdio.h>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int A;
+    cout<<"Введите значение A";
+    cin>>A;
+    int B=A/100;
+    int C=A%100/10;
+    int D=A%10;
+    A=C*100+D*10+B;
+    cout<<"Полученное число "<<A;
+}
