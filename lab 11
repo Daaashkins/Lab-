@@ -42,4 +42,99 @@ int main(){
 
 }
 
-3.
+3.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    double A,B, C, AB, AC;
+    cout<<"Введите A,B,C";
+    cin>>A>>B>>C;
+    if(A<B && B<C){
+            
+            cout<<"B  "<<B-A;
+        }
+    else {
+        cout<<"C  "<<C-A;
+    }
+    
+
+}
+
+4.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    double X, Y;
+    cout<<"Введите X,Y";
+    cin>>X>>Y;
+    if(X>0 && Y>0){
+        cout<<"Четверть "<<1;
+    }
+    else if(X<0 && Y>0){
+        
+            cout<<"Четверть "<<2;
+    
+    }
+    else if(X<0 && Y<0){
+        cout<<"Четверть "<<3;
+        
+    }
+    else{
+        cout<<"Четверть "<<4;
+    }
+
+}
+
+5.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int X;
+    cout<<"Введите X";
+    cin>>X;
+    if(X>0){
+        cout<<"Положительное ";
+    }
+    else if(X==0){
+            cout<<"Нулевое число";
+            return 0;
+    }
+    else{
+        cout<<"Отрицательное ";
+    }
+    if(X%2==0){
+        cout<<"четное число";
+    }
+    else{
+        cout<<"нечетное число";
+    }
+}
+
+6.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int X;
+    cout<<"Введите X";
+    cin>>X;
+    if(X%2==0){
+        cout<<"Четное ";
+    }
+    else{
+        cout<<"Нечетное ";
+    }
+    if(X>99){
+        cout<<"трехзначное число";
+    
+    }
+    else if(X>9){
+        cout<<"двухначное число";
+    }
+    else{
+        cout<<"однозначное число";
+    }
+}
