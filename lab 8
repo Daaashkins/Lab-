@@ -1,13 +1,20 @@
-1. #include <iostream>
+1.  #include <iostream>
 #include <stdio.h>
 #include <cmath>
 using namespace std;
 
 int main(){
-    double b;
+    int b, Kb;
     cout<<"Введите значение байтов";
     cin>>b;
-    int Kb=b/1024;
+    if (b%1024!=0){
+        Kb=b/1024+1;
+    }
+    else{
+         Kb=b/1024;
+    }
+
+    
     cout<<"Значение килобайтов равно "<<Kb;
 }
 
