@@ -1,0 +1,37 @@
+1. #include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    double N, a=0.1;
+    cout<<"Введите N";
+    cin>>N;
+    for (int i=0;i<10;i++){
+    cout<<"Стоимость "<<a<<"кг конфет = "<<a*N;
+    cout<<"\n";
+    a=a+0.1;
+    }
+    
+    
+}
+
+2. #include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int N;
+    double a=1, b=1.1;
+    cout<<"Введите N";
+    cin>>N;
+    while (N>0){
+        a=a*b;
+        b=b+0.1;
+        N=N-1;
+    }
+        
+        
+        
+    cout<<"Произведение = "<<a;
+
+    }
