@@ -67,4 +67,21 @@ int main(){
  
     }
 }
-5.
+5.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    float A;
+    int N;
+    cout<<"Введите A, N";
+    cin>>A>>N;
+    float A2=1, rez = 1;
+    int i;
+    for (i = 2; i <= N; i ++) {
+        A2=A2*(-A);
+        rez=rez+A2;
+ 
+    }
+    cout <<"Значение суммы "<<rez<<"\n";
+}
