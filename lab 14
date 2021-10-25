@@ -1,0 +1,48 @@
+1.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int A,B;
+    cout<<"Введите A, B";
+    cin>>A>>B;
+    for (int i = A; i <= B; i ++) {
+        for (int j=0;j<i;j++){
+             cout <<i;
+        }
+        cout<<"\n";
+    }
+}
+
+
+2.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int A,B;
+    cout<<"Введите A, B";
+    cin>>A>>B;
+    while(A>B){
+        A=A-B;
+    }
+    cout<<"Незанятая часть равна "<<A;
+    
+}
+
+3.#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int N, K=0, S=0;
+    cout<<"Введите N";
+    cin>>N;
+    while(S<=N){
+        K++;
+        S=K+S;
+    
+    }
+    cout<<K<<" "<<S;
+    
+}
