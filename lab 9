@@ -54,11 +54,12 @@ int main(){
     int A,B,C;
     cout<<"Введите A,B,C";
     cin>>A>>B>>C;
-    int Z=(A*B)/(C*C);
-    cout<<"Количество квадратов "<<A<<"\nНезанятая площадь"<<A*B-C*C*Z;
+    int Z=A/C;
+    int X=B/C;
+    int K=Z*X;
+    cout<<"Количество квадратов "<<K<<"\nНезанятая площадь"<<A*B-C*C*K;
  
 }
-
 5.#include <iostream>
 #include <cmath>
 using namespace std;
