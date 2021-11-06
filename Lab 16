@@ -1,0 +1,73 @@
+1.#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    int N, K, L, arr[100];
+    double sum=0;
+    cout<<"Введите N, K, L";
+    cin>>N>>K>>L;
+    cout<<"\nВведите массив";
+    
+    for(int i=0;i<N;i++){
+        cin>>arr[i];
+    }
+    for(int i=K-1;i<L;i++){
+        sum=sum+arr[i];
+    }
+    sum=sum/(L-K+1);
+    cout<<sum;
+
+}
+
+2.#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    int N, arr[100], d;
+    cout<<"Введите N";
+    cin>>N;
+    cout<<"\nВведите массив";
+    
+    for(int i=0;i<N;i++){
+        cin>>arr[i];
+    }
+    d=arr[1]-arr[0];
+    for(int i=1;i<N;i++){
+        if((arr[i]-arr[i-1])!=d){
+            cout<<0;
+            return 0;
+        }
+    }
+
+    cout<<d;
+
+}
+3.#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    int N, arr[100], min;
+    cout<<"Введите N";
+    cin>>N;
+    cout<<"\nВведите массив";
+    
+    for(int i=1;i<N;i++){
+        cin>>arr[i];
+    }
+    min=arr[1];
+    for(int i=2;i<N;i++){
+        if(i%2==0){
+            if(arr[i]<min){
+                min=arr[i];
+            }
+            
+        }
+    }
+
+    cout<<min;
+
+}
+4.
