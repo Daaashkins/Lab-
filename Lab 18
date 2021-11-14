@@ -1,1 +1,67 @@
+1.#include <iostream>
+#include <math.h>
+using namespace std;
 
+int main(){
+    int N, arr[100], brr[100], crr[100];
+    cout<<"Введите N";
+    cin>>N;
+    cout<<"\nВведите массив A";
+    
+    for(int i=0;i<N;i++){
+        cin>>arr[i];
+    }
+    cout<<"\nВведите массив B";
+    
+    for(int i=0;i<N;i++){
+        cin>>brr[i];
+    }
+    
+    for(int i=0;i<N;i++){
+        crr[i]=arr[i];
+        }
+    for(int i=0;i<N;i++){
+        arr[i]=brr[i];
+        }
+    for(int i=0;i<N;i++){
+        brr[i]=crr[i];
+        }
+    cout<<"Массив A ";
+    for(int i=0;i<N;i++){
+        cout<<" "<<arr[i];
+        }
+    cout<<"\nМассив B";
+    for(int i=0;i<N;i++){
+        cout<<" "<<brr[i];
+        }
+
+}
+
+2.#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    int N, arr[100], brr[100];
+    cout<<"Введите N";
+    cin>>N;
+    cout<<"\nВведите массив A";
+    
+    for(int i=0;i<N;i++){
+        cin>>arr[i];
+    }
+    for (int k=0; k<N; ++k){
+        brr[k]=0;
+        for (int i=k; i<N; ++i){
+            brr[k]+=arr[i];
+        }
+    }
+    for(int i=0;i<N;i++){
+        cout<<brr[i]<<" ";
+    }
+ 
+    
+        
+  
+
+}
