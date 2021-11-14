@@ -70,4 +70,50 @@ int main(){
     cout<<min;
 
 }
-4.
+4.#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    int N, arr[100], max;
+    cout<<"Введите N";
+    cin>>N;
+    cout<<"\nВведите массив";
+    
+    for(int i=0;i<N;i++){
+        cin>>arr[i];
+    }
+    max=1;
+    for(int i=1;i<N;i++){
+        if(arr[i]>arr[i+1] && arr[i]>arr[i-1]){
+                max=i+1;
+            
+        }
+    }
+
+    cout<<max;
+
+}
+5.#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    int N, arr[100], max;
+    cout<<"Введите N";
+    cin>>N;
+    cout<<"\nВведите массив";
+    
+    for(int i=0;i<N;i++){
+        cin>>arr[i];
+    }
+    for(int i=0;i<N;i++){
+        if(arr[i]==arr[i+1]){
+                cout<<"Номера элементов "<<i+1<<" "<<i+2;
+                return 0;
+            
+        }
+    }
+
+
+}
