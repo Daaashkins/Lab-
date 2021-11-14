@@ -78,7 +78,7 @@ int main(){
     cin>>A>>N;
     float A2=1, rez = 1;
     int i;
-    for (i = 2; i <= N; i ++) {
+    for (i = 2; i <= N+1; i ++) {
         A2=A2*(-A);
         rez=rez+A2;
  
