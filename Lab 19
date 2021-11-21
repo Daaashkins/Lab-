@@ -1,0 +1,34 @@
+1.#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    int N, arr[100];
+    cout<<"Введите N";
+    cin>>N;
+    cout<<"Введите массив";
+
+    for(int i=0;i<N;i++){
+        cin>>arr[i];
+    }
+    
+    int k=0;
+    for (int i=1;i<N;i++){
+        if(arr[k]!=arr[i]){
+           k++;
+           arr[k]=arr[i];
+        }
+        
+    }
+    k++;
+
+       
+    cout<<"\n";    
+    for(int i=0;i<k;i++){
+        cout<<arr[i]<<" ";
+    }
+
+
+}
+
+2.
