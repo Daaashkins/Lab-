@@ -33,6 +33,7 @@ int main(){
     cout<<"\nМассив B";
     for(int i=0;i<N;i++){
         cout<<" "<<brr[i];
+        
         }
 
 }
@@ -59,9 +60,114 @@ int main(){
     for(int i=0;i<N;i++){
         cout<<brr[i]<<" ";
     }
- 
+
+}
+
+3.#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    int N, arr[100], brr[100], d;
+    cout<<"Введите N";
+    cin>>N;
+
+    arr[0]=1;
+    d=arr[0];
+    brr[0]=arr[0];
     
-        
-  
+    for(int i=1;i<N;i++){
+        arr[i]=arr[i-1]+1;
+    }
+      for(int i=0;i<N;i++){
+        cout<<arr[i]<<" ";
+    }
+    
+    for (int i=1;i<N;i++){
+        if(arr[i]%2==1){
+            brr[i]=arr[i]+d;
+            d=arr[i];
+        }
+        else{
+            brr[i]=arr[i];
+        }
+    }      
+    cout<<"\n";    
+    for(int i=0;i<N;i++){
+        cout<<brr[i]<<" ";
+    }
+}
+
+4.#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    int N, arr[100], min, max;
+    cout<<"Введите N";
+    cin>>N;
+    cout<<"Введите массив";
+
+    for(int i=0;i<N;i++){
+        cin>>arr[i];
+    }
+    max=arr[0];
+    min=arr[0];
+
+    
+    for (int i=0;i<N;i++){
+        if(arr[i]>max){
+            max=arr[i];
+        }
+        else if(arr[i]<min){
+            min=arr[i];
+            
+        }
+    }
+    for (int i=1;i<N;i++){ 
+        if(arr[i-1]==min && arr[i+1]==max){
+            arr[i]=0;
+        }
+        else if(arr[i-1]==max && arr[i+1]==min){
+            arr[i]=0;
+        }
+       
+    cout<<"\n";    
+    for(int i=0;i<N;i++){
+        cout<<arr[i]<<" ";
+    }
+
+}
+}
+5.#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    int N, arr[100], min, max;
+    cout<<"Введите N";
+    cin>>N;
+    cout<<"Введите массив";
+
+    for(int i=0;i<N;i++){
+        cin>>arr[i];
+    }
+
+    for (int i=1;i<N;i++){
+        if(arr[i-1]>arr[i]){
+            arr[i-1]=arr[i]+arr[i-1];
+            arr[i]=arr[i-1]-arr[i];
+            arr[i-1]=arr[i-1]-arr[i];
+
+            
+        }
+    }
+
+       
+    cout<<"\n";    
+    for(int i=0;i<N;i++){
+        cout<<arr[i]<<" ";
+    }
+
 
 }
