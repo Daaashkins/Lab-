@@ -43,24 +43,26 @@ int main(){
 using namespace std;
 
 int main(){
-    int N, arr[100], brr[100];
+    int N, arr[100];
+    double C=0;
+    double brr[100];
     cout<<"Введите N";
     cin>>N;
     cout<<"\nВведите массив A";
     
-    for(int i=0;i<N;i++){
+    for(int i=1;i<N+1;i++){
         cin>>arr[i];
     }
-    for (int k=0; k<N; ++k){
-        brr[k]=0;
-        for (int i=k; i<N; ++i){
-            brr[k]+=arr[i];
-        }
+    int i;
+    for (i=1; i<N+1; i++){
+        C=C+arr[i];
+        brr[i]=C/i;
+          
+        
     }
-    for(int i=0;i<N;i++){
+    for(i=1;i<N+1;i++){
         cout<<brr[i]<<" ";
     }
-
 }
 
 3.#include <iostream>
