@@ -122,7 +122,71 @@ int main() {
 
     }
     
-2. 
+2. #include <iostream>
+ 
+int main(){
+   int n;
+   char c;
+   printf("Направление:") ;
+   scanf ("%c", &c);
+   printf("Команда:") ;
+   scanf ("%i", &n);
+ 
+   switch (c) {
+   case 'C':
+       switch (n) {
+       case 1:
+            c='Z';
+            break;
+       case 0:
+            c='C';
+            break;
+       case -1:
+            c='B';
+            break;
+       }
+       break;
+   case 'B':
+       switch (n) {
+       case 1:
+            c='C';
+            break;
+       case 0:
+            c='B';
+            break;
+       case -1:
+            c='U';
+            break;
+       }
+   case 'U':
+       switch (n) {
+       case 1:
+            c='B';
+            break;
+       case 0:
+            c='U';
+            break;
+       case -1:
+            c='Z';
+            break;
+       }
+       break;
+   case 'Z':
+       switch (n) {
+       case 1:
+            c='U';
+            break;
+       case 0:
+            c='Z';
+            break;
+       case -1:
+            c='C';
+            break;
+       }
+   }
+   printf("%c\n",c);
+   return 0;
+}
     
 3.#include <iostream>
 #include <cmath>
