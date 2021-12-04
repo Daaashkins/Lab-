@@ -4,44 +4,43 @@ using namespace std;
 
 int main() {
     setlocale(LC_ALL, "Russian");
-    int n;
-    string c;
+    int n, k;
     cout << "Число:";
     cin>>n;
     cout<<"Месяц:";
-    cin>>c;
+    cin>>k;
  
     
      switch (n % 100) {
         case 10:
-            cout << "десять";
+            cout << "десятое";
             break;
         case 11:
-            cout << "одинадцать";
+            cout << "одинадцатое";
             break;
         case 12:
-            cout << "двенадцать";
+            cout << "двенадцатое";
             break;
         case 13:
-            cout << "тринадцать";
+            cout << "тринадцатое";
             break;
         case 14:
-            cout << "четырнадцать";
+            cout << "четырнадцатое";
             break;
         case 15:
-            cout << "пятнадцать";
+            cout << "пятнадцатое";
             break;
         case 16:
-            cout << "шестнадцать";
+            cout << "шестнадцатое";
             break;
         case 17:
-            cout << "семнадцать";
+            cout << "семнадцатое";
             break;
         case 18:
-            cout << "восемнадцать";
+            cout << "восемнадцатое";
             break;
         case 19:
-            cout << "девятнадцать";
+            cout << "девятнадцатое";
             break;
         }
         switch (n  / 10) {
@@ -52,6 +51,7 @@ int main() {
             cout << "тридцать ";
             break;
         }
+        if(n<10 || n>20){
  
         switch (n % 10) {
         case 1:
@@ -82,45 +82,48 @@ int main() {
             cout<<"девятое ";
             break;
         }
-    if (c=="январь"){
-        cout<<"января";
-    }
-     if (c=="февраль"){
-        cout<<"февраля";
-    }
-     if (c=="март"){
-        cout<<"марта";
-    }
-     if (c=="апрель"){
-        cout<<"апреля";
-    }
-     if (c=="май"){
-        cout<<"мая";
-    }
-     if (c=="июнь"){
-        cout<<"июня";
-    }
-     if (c=="июль"){
-        cout<<"июля";
-    }
-     if (c=="август"){
-        cout<<"августа";
-    }
-     if (c=="сентябрь"){
-        cout<<"сентября";
-    }
-     if (c=="октябрь"){
-        cout<<"октября";
-    }
-     if (c=="ноябрь"){
-        cout<<"ноября";
-    }
-     if (c=="декабрь"){
-        cout<<"декабря";
-    }
-    
+        }
+        switch (k) {
+        case 1:
+            cout << "января ";
+            break;
+        case 2:
+            cout << "февраля ";
+            break;
+        case 3:
+            cout << "марта";
+            break;
+        case 4:
+            cout << "апреля";
+            break;
+        case 5:
+            cout << "мая";
+            break;
+        case 6:
+            cout << "июня";
+            break;
+        case 7:
+            cout << "июля";
+            break;
+        case 8:
+            cout << "августа";
+            break;
+        case 9:
+            cout<<"сентября";
+            break;
+        case 10:
+            cout<<"октября";
+            break;
+        case 11:
+            cout<<"ноября";
+            break;
+        case 12:
+            cout<<"декабря";
+            break;
+
 
     }
+}
     
 2. #include <iostream>
  
