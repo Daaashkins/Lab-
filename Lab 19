@@ -71,6 +71,50 @@ int main(){
 
 }
 
+2/2 #include <iostream>
+#include <math.h>
+#include <vector>
+
+using namespace std;
+
+int main(){
+    int N, arr[100], n, i=0;
+    cout<<"Введите N";
+    cin>>N;
+    cout<<"Введите массив ";
+    
+    for( i=0;i<N;i++){
+        cin>>arr[i];
+    }
+    
+    
+    
+    while(i<N){
+        n=0;
+    for(int k=0;k<N;k++){
+        if (arr[i]==arr[k]){
+            if(n!=2)
+                i++;
+        }
+        else{
+            for( k=N;k>i;k--){ 
+                if (arr[i]==arr[k]){
+                      N=N-1;
+                      for(int l=k;l<N;l++)
+                      arr[l]=arr[l+1];
+                  
+                    }
+                }
+            }
+        }
+    }
+        
+
+        for(i=0;i<N;i++){
+           cout<<arr[i]<<" ";
+    }
+ } 
+
 3.#include <stdio.h>
 int main(void)
 {
