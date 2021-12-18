@@ -8,11 +8,13 @@ double PowerA3(double A) {
 
 int main() {
 	double x, y;
-	cout<<"Введите x, y";
+	cout<<"Введите A,степень";
 	cin>>x>>y;
 	y = PowerA3(x);
 		cout << "B = A^3 = " << y << endl;
 	}
+	
+
 	
 2.#include <iostream>
 #include <cmath>
@@ -30,6 +32,7 @@ int sign(float x){
    { return 1;
        
    }
+   
 }
 
 int main() {
@@ -38,3 +41,76 @@ int main() {
 	cin>>a>>b;
 		cout << "Sign(A)+Sign(B) =" << sign(a)+sign(b) << endl;
 	}
+
+
+
+3.#include <iostream>
+#include <cmath>
+using namespace std;
+
+ 
+float rings(float r1, float r2){
+   return 3.14*(r1*r1-r2*r2);
+}
+ 
+int main(void)
+{
+    int i;
+    for(i=1; i<=3; ++i){
+        float r1,r2;
+        cout<<"Введите R1";
+        cin>>r1;
+        cout<<"Введите R2";
+        cin>>r2;
+        cout<<"S"<<rings(r1,r2);
+    }
+    return 0;
+}
+
+4.using namespace std;
+
+int sign(float a,float b){
+   if (a>0 && b>0){ 
+       return 1;
+   }    
+   if (a<0 && b>0){ 
+       return 2;
+       
+   }    
+   if (a<0 && b<0){ 
+       return 3;
+    }
+    if (a>0 && b<0){ 
+       return 4;
+    }
+   
+}
+
+int main() {
+	double x,y;
+	cout<<"Введите x, y";
+	cin>>x>>y;
+		cout << sign(x,y) <<" четверть"<< endl;
+	}
+	
+5.#include <iostream>
+#include <cmath>
+using namespace std;
+
+float fact2(int n){
+    int temp=1;
+    for (;n>0;n-=2) temp*=n;
+    return temp;
+}
+ 
+int main(void)
+{
+    int i, n;
+    for (i=1; i<=5; ++i){
+        cout<<"Введите N";
+        cin>>n;
+       cout<<"fact=" <<fact2(n)<<endl;
+    }
+    return 0;
+}
+   
